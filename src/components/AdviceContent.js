@@ -54,12 +54,15 @@ const AdviceContent = (props) => {
           </div>
         </div>
       )}
-      {!isLoading && !error && <p className={classes.main}>"{advice.advice}"</p>}
+      {!isLoading && !error && (
+        <p className={classes.main}>"{advice.advice}"</p>
+      )}
       {!isLoading && error && <p className={classes.main}>{error}</p>}
       <div className={classes.img}></div>
       <button onClick={fetchQuote} className={classes.dice} disabled={disable}>
         <img alt='Dice' src={Dice} />
       </button>
+      
     </Fragment>
   );
 };
