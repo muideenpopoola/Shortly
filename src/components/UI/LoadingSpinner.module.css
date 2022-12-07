@@ -1,72 +1,10 @@
-.header {
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: hsl(150, 100%, 66%);
-  margin-bottom: 3rem;
-}
-
-.main {
-  font-size: 2.8rem;
-  line-height: 5rem;
-  color: hsl(193, 38%, 86%);
-  margin-bottom: 4rem;
-}
-
-.img {
-  background-image: url(../assets/pattern-divider-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 2.5rem;
-  width: 100%;
-  margin-top: -10px;
-}
-
-.dice {
-  margin-top: -20px;
-  margin: 0 auto;
-  transform: translateY(3rem);
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  background-color: hsl(150, 100%, 66%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-}
-
-.dice:hover {
-  box-shadow: 0px 0px 8px 8px hsla(150, 100%, 66%, 0.388);
-}
-
-.dice:disabled {
-  cursor: not-allowed;
-  background-color: hsla(150, 100%, 66%, 0.243);
-}
-
-@media screen and (max-width: 450px) {
-  .main {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
-    margin-bottom: 3rem;
-  }
-  .header {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.container {
-  height: 12rem;
-}
-
 .lds-spinner {
-  color: official;
+  color: hsl(255, 11%, 22%);
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
+  margin: 0 auto;
 }
 .lds-spinner div {
   transform-origin: 40px 40px;
@@ -81,7 +19,7 @@
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: #fff;
+  background: hsl(255, 11%, 22%);
 }
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);

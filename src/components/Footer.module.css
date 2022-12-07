@@ -1,0 +1,116 @@
+footer {
+  background-color: hsl(230, 25%, 95%);
+}
+
+.footer {
+  padding: 6rem 15rem 5rem 15rem;
+  background-color: #232027;
+  display: flex;
+  width: 100%;
+}
+
+.footer li {
+  list-style: none;
+  margin-bottom: 0.7rem;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 75%);
+  transition: all 0.1s;
+}
+
+.footer a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.footer p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.svg path {
+  transition: all 0.2s;
+}
+
+.svg path:hover {
+  fill: hsl(180, 66%, 49%) !important;
+}
+
+.footer .logo {
+  flex: 2;
+}
+
+.footer .features {
+  flex: 1;
+}
+
+.footer .resources {
+  flex: 1;
+}
+
+.footer .company {
+  flex: 1;
+}
+
+.footer .icons {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.copy {
+  text-align: center;
+  color: hsl(0, 0%, 75%);
+}
+.copy a {
+  text-decoration: none;
+  color: hsl(255, 11%, 22%);
+  margin-left: 0.5rem;
+  transition: all 0.1s;
+}
+
+.copy a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 5rem 7rem 4rem 7rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 3rem 7rem 4rem 3rem;
+  }
+
+  .footer .logo {
+    flex: 1.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .footer .icons {
+    gap: 4rem;
+  }
+
+  .footer li,
+  .footer a {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 3rem;
+  }
+}

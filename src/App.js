@@ -1,21 +1,18 @@
 import { Fragment } from 'react';
-import Advice from './components/Advice';
+import About from './components/About';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Main from './components/Main';
+import PreFooter from './components/PreFooter';
 
 function App() {
-  const time = new Date();
-  const year = time.getFullYear();
-
   return (
     <Fragment>
-      <Advice />
-      <div className='footer'>
-        <p className='name'>
-          &copy; {year}{' '}
-          <a target='blank' href='https://github.com/muideenpopoola'>
-            Muideen Popoola
-          </a>
-        </p>
-      </div>
+      <Header />
+      <About />
+      <Main />
+      <PreFooter />
+      <Footer />
     </Fragment>
   );
 }

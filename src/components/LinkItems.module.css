@@ -1,0 +1,56 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem 4rem;
+  border-radius: 8px;
+}
+
+.list .divbtn button {
+  background-color: hsl(257, 27%, 26%) !important;
+}
+
+.list button {
+  border-radius: 5px;
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+.list p {
+  color: hsl(260, 8%, 14%) !important;
+  font-size: 2rem;
+}
+
+.list a {
+  color: hsl(180, 66%, 49%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 2.5rem 4rem;
+  }
+
+  .list div {
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .list button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .list a {
+    margin-top: 1.5rem;
+  }
+}

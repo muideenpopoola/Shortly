@@ -1,0 +1,82 @@
+.main {
+  padding: 2rem 15rem 25rem 15rem;
+  margin-top: 15rem;
+  width: 100%;
+  background-color: hsl(230, 25%, 95%);
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 4rem;
+  color: hsl(255, 11%, 22%);
+}
+
+.main p {
+  color: hsl(257, 7%, 63%);
+}
+
+.main .line {
+  height: 0.9rem;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: hsl(180, 66%, 49%);
+  transform: translateY(20rem);
+  z-index: 1;
+}
+
+.cards {
+  display: flex;
+  text-align: left;
+  margin-top: 8rem;
+  z-index: 10;
+}
+
+.main .card--2 {
+  transform: translateY(5rem);
+}
+.main .card--3 {
+  transform: translateY(10rem);
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 2rem 7rem 25rem 7rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 2rem 3rem 25rem 3rem;
+  }
+
+  .main .line {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+  }
+  .main {
+    padding: 2rem 3rem 10rem 3rem;
+  }
+
+  .main .line {
+    width: 1rem;
+    height: 10rem;
+    transform: translateY(-3.5rem);
+    z-index: 1;
+  }
+
+  .main .card--2 {
+    transform: translateY(0);
+  }
+  .main .card--3 {
+    transform: translateY(0);
+  }
+
+  .main h2 {
+    font-size: 3rem;
+  }
+}

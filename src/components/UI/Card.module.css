@@ -1,0 +1,53 @@
+.card {
+  background-color: #fff;
+  padding: 0 3rem 3rem 3rem;
+  border-radius: 7px;
+}
+
+.card div {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-4rem);
+}
+
+.card h3 {
+  font-size: 2.5rem;
+  color: hsl(255, 11%, 22%);
+  margin-top: -1rem;
+  margin-bottom: 1.2rem;
+}
+
+.card p {
+  color: hsl(0, 0%, 75%);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .card div {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    text-align: center;
+    z-index: 10;
+    padding: 4rem;
+  }
+
+  .card div {
+    margin: 0 auto;
+    transform: translateY(-7.5rem);
+  }
+}
