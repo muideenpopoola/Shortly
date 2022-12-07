@@ -64,7 +64,7 @@
   }
 
   .link-input {
-    height: 23rem;
+    height: 27rem;
   }
 
   .link-input div {
@@ -73,7 +73,7 @@
     left: 0;
     transform: translate(0, 0);
     width: 100%;
-    gap: 4rem;
+    gap: 8rem;
     padding: 4rem 2rem;
   }
 }

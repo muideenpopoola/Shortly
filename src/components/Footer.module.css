@@ -101,7 +101,9 @@ footer {
   }
 
   .footer .icons {
-    gap: 4rem;
+    /* gap: 4rem; */
+    width: 100%;
+    justify-content: space-around;
   }
 
   .footer li,
